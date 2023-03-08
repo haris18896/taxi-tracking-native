@@ -21,23 +21,31 @@ function App() {
   };
 
   return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
-      />
-      <View
-        style={{
-          backgroundColor: isDarkMode ? Colors.black : Colors.white,
-        }}>
-        <WebView
-          source={{uri: 'https://vehicle-tracking.vercel.app/'}}
-          originWhitelist={['*']}
-          style={{marginTop: 20}}
-        />
-      </View>
-    </SafeAreaView>
+    <WebView
+      source={{uri: 'https://vehicle-tracking.vercel.app/'}}
+      // style={{marginTop: 20}}
+    />
   );
+
+  // return (
+  //   <SafeAreaView style={backgroundStyle}>
+  //     <StatusBar
+  //       barStyle={isDarkMode ? 'light-content' : 'dark-content'}
+  //       backgroundColor={backgroundStyle.backgroundColor}
+  //     />
+  //     <View
+  //       style={{
+  //         backgroundColor: isDarkMode ? Colors.black : Colors.white,
+  //       }}>
+  //       <Text>Is it working fine</Text>
+  //       <WebView
+  //         source={{uri: 'https://vehicle-tracking.vercel.app/'}}
+  //         // originWhitelist={['*']}
+  //         style={{marginTop: 20}}
+  //       />
+  //     </View>
+  //   </SafeAreaView>
+  // );
 }
 
 const styles = StyleSheet.create({
