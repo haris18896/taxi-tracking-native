@@ -22,7 +22,7 @@ function App() {
 
   return (
     <WebView
-      source={{uri: 'https://vehicle-tracking.vercel.app/'}}
+      source={{uri: 'http://taxi.tmpl.pk/'}}
       // style={{marginTop: 20}}
     />
   );
